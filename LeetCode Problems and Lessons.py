@@ -2,6 +2,7 @@
 
 import math
 from collections import *
+from binarytree import * #Not automatically installed, needed pip install binarytree
 
 #Two Sum
 #First Attempt at twoSum, using nested for loops thus it is O(n^2)
@@ -88,6 +89,25 @@ def validAnagramV3(word1, word2):
 print(validAnagramV3("racecar", "carrace"))
 print(validAnagramV3("racecar", "crrace"))
 
-print('yes')
+#Binary Tree Inorder Traversal
+#Inorder traversal of a BT is when you list the node values from left to right
+#This is the first attempt, we can use recursion to create the corresponding list
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
 
-print('no')
+def inorderTraversal(root):
+    if not root:
+        return []
+    
+    return inorderTraversal(root.left) + [root.val] + inorderTraversal(root.right)
+
+#Generates a random binary tree, can specify height with arguments height = Int
+#and whether it's perfect with argument is_perfect = Bool
+myTree = tree()
+print(myTree)
+print(myTree.values)
+print(inorderTraversal(myTree))
