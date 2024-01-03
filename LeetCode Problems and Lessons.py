@@ -107,7 +107,12 @@ def inorderTraversal(root):
 
 #Generates a random binary tree, can specify height with arguments height = Int
 #and whether it's perfect with argument is_perfect = Bool
-myTree = tree()
-print(myTree)
-print(myTree.values)
-print(inorderTraversal(myTree))
+myTree1 = tree()
+print(myTree1)
+print(myTree1.values)
+print(inorderTraversal(myTree1))
+
+myTree2 = tree()
+print(myTree2)
+print(myTree2.values)
+print(inorderTraversal(myTree2))
