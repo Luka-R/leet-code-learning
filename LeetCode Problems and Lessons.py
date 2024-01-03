@@ -87,3 +87,7 @@ def validAnagramV3(word1, word2):
 
 print(validAnagramV3("racecar", "carrace"))
 print(validAnagramV3("racecar", "crrace"))
+
+print('yes')
+
+print('no')
