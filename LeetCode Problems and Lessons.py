@@ -2,7 +2,7 @@
 
 import math
 from collections import *
-from binarytree import * #Not automatically installed, needed pip install binarytree
+from binarytree import * #Not automatically installed, needed py -m pip install binarytree
 
 #Two Sum
 #First Attempt at twoSum, using nested for loops thus it is O(n^2)
